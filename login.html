@@ -11,8 +11,42 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Multi-função</title>
 </head>
+
 <body>
-    <div class="box-login" id="form-login">
+    <main class="box-login">
+        <div class="container">
+            <div class="top">
+                <header>Login</header>
+            </div>
+            <div class="content-login">
+                <div class="input-field">
+                    <input type="text" id="text">
+                    <form id="form-login">
+                        <div class="label-input">
+                            
+                        </div>
+                        <div class="label-input">
+                            <input type="password" id="password">
+                        </div>
+                        <button type="submit" id="button-login">Entrar</button>
+
+                    </form>
+                    <div class="two-col">
+                        <div class="one">
+                           <input type="checkbox" name="" id="check">
+                           <label for="check">Lembre-me</label>
+                        </div>
+                        <div class="two">
+                            <div id="mensage-error"></div>
+                        <div id="remember-password">Esqueceu a senha? <a href="#">Click Aqui</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <!-- <div class="box-login" id="form-login">
         <div class="container">
             <div class="top">
                 <header>Login</header>
@@ -27,6 +61,7 @@
             </div>
             <div class="input-field">
                 <input type="submit" class="submit" value="Login" id="button-login">
+                <div id="mensage-error"></div>
             </div>
             <div class="two-col">
                 <div class="one">
@@ -34,11 +69,11 @@
                    <label for="check">Lembre-me</label>
                 </div>
                 <div class="two">
-                    <label><a href="#">Esqueceu a senha?</a></label>
+                    <label><a href="#">Esqueceu a senha? Clique aqui</a></label>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>  -->
     <script src="js/login.js"></script>
 </body>
 </html>
