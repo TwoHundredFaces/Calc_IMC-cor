@@ -1,146 +1,89 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+    font-family: 'poppins' ,sans-serif;
 }
-
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(imgs/forest.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
+body{
+    background-image: url(/imgs/forest.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
 }
-
-.container-form {
-  width: 90%;
-  height: 90vh;
-  display: flex;
-  justify-content: space-around;
-  transition:  all .5s ease-out;
+.box-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
 }
-
-.welcome-back {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
 }
-
-.message {
-  padding: 1rem;
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
 }
-
-.message h2 {
-  font-size: 1.7rem;
-  padding: 1rem 0;
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
 }
-
-.message button {
-  padding: 1rem;
-  font-weight: 400;
-  background-color: #4a4aee;
-  border-radius: 2rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: .9rem;
-  margin-top: 2rem;
-  transition: all .3s ease-in;
-  color: #fff;
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
 }
-
-.message button:hover {
-  background-color: #6464f8;
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
 }
-
-.formulario {
-  width: 400px;
-  padding: 1rem;
-  margin: 2rem;
-  background-color: rgb(51, 51, 51, 0.602);
-  text-align: center;
+::-webkit-input-placeholder{
+    color: #fff;
 }
-
-.create-account {
-  padding: 2.7rem 0;
-  font-size: 1.7rem;
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ;
 }
-
-.icons {
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
-.border-icon {
-  height: 20px;
-  width: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  border: solid thin white;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  transition: all .3s ease-in;
+.two-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
 }
-
-.border-icon:hover {
-  background-color: #4a4aee;
-  cursor: pointer;
+.one{
+    display: flex;
 }
-
-.conta-gratis {
-  padding: 2rem 0;
-}
-
-.formulario input {
-  width: 70%;
-  display: block;
-  margin: auto;
-  margin-bottom: 2rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: white thin solid;
-  text-align: center;
-  outline: none;
-  padding: .2rem 0;
-  font-size: .9rem;
-  color: white;
-}
-
-.formulario input[type="button"] {
-  width: 60%;
-  margin: auto;
-  border: solid thin white;
-  padding: .7rem;
-  border-radius: 2rem;
-  background-color: white;
-  font-weight: 600;
-  margin-top: 3rem;
-  font-size: .8rem;
-  cursor: pointer;
-  color: #222;
-}
-
-.sign-in {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.sign-in.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.sign-up.active {
-  opacity: 0;
-  visibility: hidden;
+label a{
+    text-decoration: none;
+    color: #fff;
 }

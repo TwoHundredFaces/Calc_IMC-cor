@@ -12,61 +12,33 @@
     <title>Multi-função</title>
 </head>
 <body>
-    <div class="container-form sign-up">
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bem-vindo ao Multi-tarefas</h2>
-                <p>Caso tenha uma vonta, inicie uma sessão aaqui</p>
-                <button class="sign-up-btn">Iniciar sessão</button>
+    <div class="box-login" id="form-login">
+        <div class="container">
+            <div class="top">
+                <header>Login</header>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Usuário" id="text">
+                <i class='bx bx-user' ></i>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Senha" id="password">
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Login" id="button-login">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                   <input type="checkbox" name="" id="check">
+                   <label for="check">Lembre-me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Esqueceu a senha?</a></label>
+                </div>
             </div>
         </div>
-        <form class="formulario">
-            <h2 class="create-account">Criar conta</h2>
-            <div class="icons">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="conta-gratis">Crair conta gratuitamente</p>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="senha">
-            <input type="button" value="Registrar-se">
-        </form>
-    </div>
-    <div class="container-form sign-in">
-        <form class="formulario">
-            <h2 class="create-account">Iniciar sessão</h2>
-            <div class="icons">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
-                </div>
-                <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-            </div>
-            <p class="conta-gratis">Não possui uma conta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="senha">
-            <input type="button" value="Iniciar sessão">
-        </form>
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bem-vindo novamente!</h2>
-                <p>Caso não possua uma conta, registre-se aqui!</p>
-                <button class="sign-in-btn">Registrar-se</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </div>  
+    <script src="js/login.js"></script>
 </body>
 </html>
